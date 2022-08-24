@@ -39,7 +39,7 @@
     </div>
     <button type="submit"
       class="block w-full bg-indigo-400 text-white py-1.5 px-3 rounded transition
-        hover:bg-indigo-500 disabled:opacity-50 disabled:bg-indigo-400" [disabled]="registerForm.invalid"> <!-- [disabled] If the requirements are not met, on class disabled overrides other elemtns -->
+        hover:bg-indigo-500 disabled:opacity-50 disabled:bg-indigo-400" [disabled]="registerForm.invalid || inSubmission"> <!-- [disabled] If the requirements are not met, on class disabled overrides other elemtns -->
       Submit
     </button>
   </form>
