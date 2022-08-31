@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 // import { ModalService } from '../services/modal.service';
 import { NgxMaskModule } from 'ngx-mask';
 import { AlertComponent } from './alert/alert.component';
+import { EvenBlockerDirective } from './directives/even-blocker.directive';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AlertComponent } from './alert/alert.component';
     TabsContainerComponent,
     TabComponent,
     InputComponent,
-    AlertComponent
+    AlertComponent,
+    EvenBlockerDirective
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { AlertComponent } from './alert/alert.component';
     TabsContainerComponent,
     TabComponent,
     InputComponent,
-    AlertComponent
+    AlertComponent,
+    EvenBlockerDirective
   ],
   /*providers: [
     ModalService
