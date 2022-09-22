@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0. Project covering basic authentication (login/register), validators, forms/reactive forms, uploading videos, images, playing and identifying videos, processing videos with FFmpeg, navigation, routing, infinite scroll, etc...
 
+## Visual Examples
+![image](https://imgur.com/DXRk5t4.png)
+![image](https://imgur.com/xYo6CcR.png)
+![image](https://imgur.com/5WL1zmI.png)
+![image](https://imgur.com/NYB71WR.png)
+![image](https://imgur.com/YI4MNwp.png)
+![image](https://imgur.com/f6uyzzG.png)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
