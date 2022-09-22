@@ -1,6 +1,6 @@
 # Clips
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0. Project covering basic authentication (login/register), validators, forms/reactive forms, uploading videos, images, playing and identifying videos, processing videos with FFmpeg, navigation, routing, infinite scroll, etc...
 
 ## Development server
 
