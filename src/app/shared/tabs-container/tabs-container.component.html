@@ -1,9 +1,8 @@
 <!-- Tabs -->
 <ul class="flex flex-wrap mb-4">
     <li *ngFor="let tab of tabs" class="flex-auto text-center">
-      <a class="block rounded py-3 px-4 transition hover:text-white text-white
-        bg-indigo-400" href="#" (click)="selectTab(tab)"
-        [ngClass]="{'hover:text-indigo-400':!tab.active, 'hover:text-white bg-indigo-400' : tab.active}"> <!-- TODO CREATE A FUNCTION -->
+      <a class="block rounded py-3 px-4 transition hover:text-red-700 bg-red-400" href="#" (click)="selectTab(tab)"
+        [ngClass]="{'hover:text-red-400':!tab.active, 'hover:text-white bg-red-400' : tab.active}"> <!-- TODO CREATE A FUNCTION -->
         {{ tab.tabTitle }}</a>
     </li>
 <!--

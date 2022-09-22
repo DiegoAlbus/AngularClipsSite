@@ -35,8 +35,9 @@ export class RegisterComponent {
     Validators.max(120)
   ]);
   password = new FormControl('', [
-    Validators.required,
-    Validators.pattern(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm) // Regexr pattern found https://regexr.com/
+    Validators.required
+    // Check
+    // Validators.pattern(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm) // Regexr pattern found https://regexr.com/
   ]);
   confirm_password = new FormControl('',[
     Validators.required

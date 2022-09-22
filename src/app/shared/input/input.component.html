@@ -1,7 +1,7 @@
 <!-- Control is binded to ReactiveFormsModule -->
 <input [formControl]="control" [type]="type" 
-        class="block w-full py-1.5 px-3 text-gray-200 border border-gray-400 transition
-          duration-500 focus:outline-none rounded bg-transparent focus:border-indigo-400"
+        class="block w-full py-1.5 px-3 text-gray-900 border border-gray-400 transition
+          duration-500 focus:outline-none rounded bg-transparent focus:border-red-400"
         [placeholder]="placeholder" [mask]="format" [dropSpecialCharacters]="false" /> <!-- Format module NGX MASK MODULE is on shade.module.ts -->
         
         <ng-container *ngIf="control.touched && control.dirty">

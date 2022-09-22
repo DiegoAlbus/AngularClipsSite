@@ -38,8 +38,8 @@
       <app-input [control]="phoneNumber" placeholder="Enter Phone Number" format="000000000"></app-input>
     </div>
     <button type="submit"
-      class="block w-full bg-indigo-400 text-white py-1.5 px-3 rounded transition
-        hover:bg-indigo-500 disabled:opacity-50 disabled:bg-indigo-400" [disabled]="registerForm.invalid || inSubmission"> <!-- [disabled] If the requirements are not met, on class disabled overrides other elemtns -->
+      class="block w-full bg-red-400 text-white py-1.5 px-3 rounded transition
+        hover:bg-red-500 disabled:opacity-50 disabled:bg-red-400" [disabled]="registerForm.invalid || inSubmission"> <!-- [disabled] If the requirements are not met, on class disabled overrides other elemtns -->
       Submit
     </button>
   </form>

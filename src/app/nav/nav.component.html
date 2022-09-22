@@ -2,7 +2,7 @@
  <header id="header" class="bg-secondary">
     <nav class="container mx-auto flex justify-start items-center py-8 px-4">
       <!-- App Name -->
-      <a class="text-3xl text-indigo-400 font-bold uppercase mr-4" routerLink="/">CLIP STATION</a>
+      <a class="text-3xl 700 font-bold uppercase mr-4" routerLink="/">VALORANT CLIPS</a>
 
       <div class="flex flex-grow items-center">
         <!-- Primary Navigation -->
@@ -13,10 +13,10 @@
           </li>
           <ng-template #authLinks>
           <li>
-            <a class="px-2" routerLink="/manage" routerLinkActive="text-indigo-400" [routerLinkActiveOptions]="{exact: true}" [queryParams]="{ sort: '1' }">Manage</a>
+            <a class="px-2" routerLink="/manage" routerLinkActive="text-red-900 font-bold underline" [routerLinkActiveOptions]="{exact: true}" [queryParams]="{ sort: '1' }">Manage</a>
           </li>
           <li>
-            <a class="px-2" routerLink="/upload" routerLinkActive="text-indigo-400" [routerLinkActiveOptions]="{exact: true}">Upload</a>
+            <a class="px-2" routerLink="/upload" routerLinkActive="text-red-900 font-bold underline" [routerLinkActiveOptions]="{exact: true}">Upload</a>
           </li>
           <li>
             <a class="px-2" (click)="auth.logout($event)" href="#">Logout</a>
@@ -24,10 +24,10 @@
         </ng-template>
           <li>
             <!-- https://angular.io/api/router/RouterLinkActive -->
-            <a class="px-2" routerLink="/about" routerLinkActive="text-indigo-400">About</a> <!-- ROUTER LINK WILL REDIRECT WITHOUT REFRESHING THE PAGE -->
+            <a class="px-2" routerLink="/about" routerLinkActive="text-red-900 font-bold underline">About</a> <!-- ROUTER LINK WILL REDIRECT WITHOUT REFRESHING THE PAGE -->
           </li>
         </ul>
-        <!-- Language Switcher -->
+        <!-- LANGUAGE SWITCHER
         <ul class="flex flex-row ml-auto">
           <li>
             <a href="#">
@@ -44,6 +44,7 @@
             </a>
           </li>
         </ul>
+      -->
       </div>
     </nav>
   </header>

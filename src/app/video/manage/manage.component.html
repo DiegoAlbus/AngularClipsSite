@@ -1,13 +1,14 @@
   <!-- Top Bar -->
   <section class="container mx-auto my-8 bg-secondary p-6">
     <div class="rounded relative flex justify-between">
-      <a routerLink="/upload" class="bg-indigo-400 text-white py-4 px-10 text-xl">Upload Videos</a>
+      <a routerLink="/upload" class="bg-red-700 text-white py-4 px-10 text-xl">Upload Videos</a>
       
-      <!-- Sort Videos -->
+      <!-- TODO FIX Sort Videos 
       <select (change)="sort($event)" class="text-black px-8 text-xl outline-none appearance-none">
         <option value="1" [selected]="videoOrder === '1'">Recent Uploads</option>
         <option value="2" [selected]="videoOrder === '2'">Oldest Uploads</option>
       </select>
+      -->
     </div>
   </section>
 
@@ -18,29 +19,29 @@
       <div *ngFor="let clip of clips" class="mt-6 rounded-tl-2xl rounded-br-2xl shadow-xl bg-secondary flex flex-col justify-start">
   
         <!-- Image -->
-        <a href="#">
-          <img class="card-img-top rounded-tl-2xl w-full" src="assets/img/1.jpg">
+        <a [routerLink]="['/', 'clip', clip.docID]">
+          <img class="card-img-top rounded-tl-2xl w-full" [src]="clip.screenshotURL" crossorigin>
         </a>
   
         <!-- Body -->
         <div class="p-6 text-2xl">
   
           <!-- Link -->
-          <a href="#" class="font-bold mb-2">
+          <a [routerLink]="['/', 'clip', clip.docID]" class="font-bold mb-2">
             {{clip.title}}
           </a>
-          <a href="#" class="bg-gray-400 text-white px-2 py-1 ml-2 text-sm rounded">
+          <a (click)="copyToClipboard($event, clip.docID)" href="#" class="bg-gray-400 text-white px-2 py-1 ml-2 text-sm rounded">
             Copy Link
           </a>
   
         </div>
 
         <!-- Actions -->
-        <div class="flex text-center text-2xl bg-gray-800 p-2 mt-auto">
-          <a (click)="openModal($event, clip)" href="#" class="flex-1 p-2 border-right border-r-2 border-gray-700 transition hover:text-indigo-400">
+        <div class="flex text-center text-2xl bg-gray-400 p-2 mt-auto">
+          <a (click)="openModal($event, clip)" href="#" class="flex-1 p-2 border-right border-r-2 border-gray-700 transition hover:text-red-400">
             <span class="material-icons text-base">build</span>
           </a>
-          <a (click)="deleteClip($event, clip)" href="#" class="flex-1 p-2 rounded-br-2xl transition hover:text-indigo-400">
+          <a (click)="deleteClip($event, clip)" href="#" class="flex-1 p-2 rounded-br-2xl transition hover:text-red-400">
             <span class="material-icons text-base">delete</span>
           </a>
         </div>
